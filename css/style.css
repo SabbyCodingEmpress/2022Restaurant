@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*****************
+Webkit box
+******************/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*{
+  box-sizing: border-box;
+}
+
+/*
+MAIN STYLING
+*/
+html{
+  font-size: 60%;
+}
+
+body{
+  color: #0d0d25;
+}
+
+header{
+  background: url(" https://flexxsirv.sirv.com/24f4c34dd543535d738bd5409ec3fbe8c7718e65ef/brooke-lark-08bOYnH_r_E-unsplash__1_.jpg?w=1800") no-repeat center;
+  background-size: cover;
+  padding: 4%;
+}
+/*
+font styles
+*/
+h1, h3{
+  font: bold 10rem 'Playfair Display', serif;
+}
+
+h3{
+  font-size: 8rem;
+}
+
+h2{
+  color: rgb(255, 170, 0);
+}
+
+p, li, span, button, h2, h4, h5, h6, address{
+  font: 2.5rem 'Noto Sans JP', sans-serif;
+}
+
+p{
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-bottom: 3rem;
+}
+
+h2, address{
+  color: #f80;
+}
+
+address .openingHours h5 .price{
+  font-family: 'Prata', serif;
+}
+
+address{
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+h5{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.container-section .container-row h5{
+  font-family: 'Sora', sans-serif;
+}
+
+h6{
+  color: #ceced4;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+
+/*
+header/nav section
+*/
+header nav{
+  clear: both;
+  float: right;
+}
+
+nav ul li{
+  font-size: medium;
+  padding: 20px;
+}
+
+li{
+  display: inline; 
+}
+
+header .container-section{
+  padding: 8% 0 4% 0;
+  width: 70%;
+}
+
+form{
+  padding-top: 20px;
+}
+
+form input{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+}
+form button{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: orange;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.social-media{
+  display: inline-block;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+.social-media li span{
+  font-size: medium;
+}
+
+/*
+Main Section
+*/
+
+.container-main .main{
+  width: 90%;
+}
+
+.container-main{
+  background: url(" https://i.imgur.com/wPJUV11.png") no-repeat center;
+  background-size: cover;
+  padding: 5% 8% 10% 40%;
+  float: right;
+}
+
+.main h2{
+  padding-top: 4%;
+  text-align: center;
+}
+
+.mainText{
+  clear: both;
+  padding-bottom: 4rem;
+}
+
+p{
+  line-height: 2.5;
+}
+
+/*
+Grid section/menu images
+*/
+
+.container-section{
+  background: #f2f6f7;
+  clear: both; 
+}
+
+.order-section{
+  background: #f2f6f7;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.menuList li{
+  padding: 30px 10px 10px 10px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px; 
+  padding: 10px;
+}
+
+.grid-container > .imgContainer{
+  place-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color:#f1f1f1;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease-in;
+  opacity: 0;
+  color: white;
+}
+
+div{
+  color: white;
+  font-size: 1rem;
+  display: relative;
+  padding: top;
+}
+
+div span, div img, div button{
+  display: block;
+  text-align: center;
+
+}
+
+div img{
+  padding: 1% 25%;
+}
+
+div button{
+  margin-left: 25%;
+}
+
+.image{
+  display: block;
+  height: auto;
+  place-items: center;
+  width: 100%;
+}
+
+.starIcon{
+  display: block;
+  height: 30px;
+  width: 100%;
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1;
+  background: rgba(13, 13, 37, .3);
+  transition: .5s;
+}
+
+/*
+BOOKING SECTION
+*/
+
+.hour-section{
+  display: block;
+  padding: 40px 30px 2px 30px;
+  text-align: center;
+  background: white url() no-repeat center;
+  background-size: cover; 
+}
+
+.hour-section .mainText .call{
+  display: block;
+  padding: 0 30% 2% 30%;
+}
+
+.openingHours{
+  float: left;
+  padding: 3% 1%;
+  text-align: center;
+  width: 50%;
+}
+
+/* 
+Testimonial Section
+*/
+
+.container-row{
+  display: block;
+  padding: 30px;
+  text-align: center;
+}
+/*
+last section
+*/
+.last-container{
+  width: 100%;
+}
+.bottom-four{
+  float: left;
+  display: block;
+  width: 25%;
+}
+/*
+FOOTER
+*/
+
+footer{
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
